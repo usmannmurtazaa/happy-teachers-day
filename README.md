@@ -4,7 +4,7 @@
 
 A premium, mobile-first, universally personal Teacher's Day experience - built as a modern React SPA and deployed to Netlify.
 
-**Live Demo:** [happy-teachers-day.netlify.app](https://happy-teachers-day.netlify.app)
+**Live Demo:** [happy-teachers-day.netlify.app](https://every-teacher.netlify.app)
 
 ---
 
@@ -189,7 +189,7 @@ Fully implemented in `index.html`:
 
 - **Title:** `Happy Teacher's Day | A Tribute to Every Teacher`
 - **Description:** `A heartfelt digital tribute to every teacher who guides, supports, inspires, and makes a lasting difference.`
-- **Canonical:** `https://happy-teachers-day.netlify.app/`
+- **Canonical:** `https://every-teacher.netlify.app/`
 - **Open Graph** - `og:type`, `og:title`, `og:description`, `og:url`, `og:site_name`
 - **Twitter/X** - `summary_large_image` card with title + description
 - **JSON-LD** - `WebPage` structured data with `inLanguage`
@@ -199,7 +199,7 @@ Fully implemented in `index.html`:
 
 ### Update the canonical URL before shipping
 
-Replace `https://happy-teachers-day.netlify.app/` in:
+Replace `https://every-teacher.netlify.app/` in:
 - `index.html` (canonical + OG + Twitter)
 - `public/robots.txt`
 - `public/sitemap.xml`

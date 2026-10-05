@@ -8,13 +8,13 @@
  */
 export const creator = {
   /** 👇 Path to the photo served from the site root */
-  photoUrl: '/usman-murtaza.jpg',
+  photoUrl: '/Usman Murtaza.jpg',
 
   /** Alt text - describe the photo for screen readers & SEO */
   photoAlt: 'Portrait of Usman Murtaza, President of NextGen Tech Club, ISAC',
 
   name: 'Usman Murtaza',
-  role: 'President, NextGen Tech Club',
+  role: 'President, NextGen Tech Club, ISAC',
 
   eyebrow: 'Presented With Respect & Gratitude',
   headline: 'Wishing every teacher a very Happy Teacher’s Day.',
