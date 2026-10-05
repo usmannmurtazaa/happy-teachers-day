@@ -8,7 +8,7 @@
  */
 export const creator = {
   /** 👇 Path to the photo served from the site root */
-  photoUrl: '/Usman Murtaza.jpg',
+  photoUrl: '/usman-murtaza.jpg',
 
   /** Alt text - describe the photo for screen readers & SEO */
   photoAlt: 'Portrait of Usman Murtaza, President of NextGen Tech Club, ISAC',
