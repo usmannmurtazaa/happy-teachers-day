@@ -1,8 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<urlset
+  xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+  xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
   <url>
     <loc>https://every-teacher.netlify.app/</loc>
-    <changefreq>monthly</changefreq>
-    <priority>1.0</priority>
+    <lastmod>2026-10-06</lastmod>
+    <image:image>
+      <image:loc>https://every-teacher.netlify.app/og-preview.png</image:loc>
+      <image:title>Happy Teacher's Day - A Tribute to Every Teacher</image:title>
+      <image:caption>A heartfelt digital tribute to every teacher who guides, supports, inspires, and makes a lasting difference.</image:caption>
+    </image:image>
   </url>
 </urlset>
