@@ -1,0 +1,70 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --safe-top: env(safe-area-inset-top, 0px);
+    --safe-bottom: env(safe-area-inset-bottom, 0px);
+  }
+
+  html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 88px;
+    -webkit-text-size-adjust: 100%;
+  }
+
+  body {
+    @apply bg-ink-900 font-sans text-mist-100 antialiased;
+    overflow-x: clip;
+    text-rendering: optimizeLegibility;
+    -webkit-tap-highlight-color: transparent;
+  }
+
+  #root { overflow-x: clip; }
+
+  ::selection { background: rgba(242, 200, 121, 0.28); color: #fff; }
+
+  :focus-visible {
+    outline: 2px solid #f2c879;
+    outline-offset: 3px;
+    border-radius: 6px;
+  }
+
+  h1, h2, h3 { @apply font-display; text-wrap: balance; }
+  p { text-wrap: pretty; }
+}
+
+@layer components {
+  .glass {
+    background: linear-gradient(145deg, rgba(255,255,255,0.07) 0%, rgba(255,255,255,0.025) 45%, rgba(255,255,255,0.05) 100%);
+    border: 1px solid rgba(255,255,255,0.09);
+    backdrop-filter: blur(16px) saturate(130%);
+    -webkit-backdrop-filter: blur(16px) saturate(130%);
+  }
+  .glass-strong {
+    background: linear-gradient(145deg, rgba(255,255,255,0.10) 0%, rgba(255,255,255,0.04) 50%, rgba(255,255,255,0.07) 100%);
+    border: 1px solid rgba(255,255,255,0.12);
+    backdrop-filter: blur(22px) saturate(140%);
+    -webkit-backdrop-filter: blur(22px) saturate(140%);
+  }
+  .hairline { border: 1px solid rgba(255,255,255,0.08); }
+  .text-gradient-gold {
+    background: linear-gradient(100deg, #fbeacb 0%, #f2c879 38%, #e5b05a 62%, #f7d99a 100%);
+    -webkit-background-clip: text; background-clip: text; color: transparent;
+  }
+  .bg-grid {
+    background-image:
+      linear-gradient(to right, rgba(255,255,255,0.045) 1px, transparent 1px),
+      linear-gradient(to bottom, rgba(255,255,255,0.045) 1px, transparent 1px);
+    background-size: 58px 58px;
+    -webkit-mask-image: radial-gradient(ellipse 90% 60% at 50% 0%, #000 20%, transparent 78%);
+    mask-image: radial-gradient(ellipse 90% 60% at 50% 0%, #000 20%, transparent 78%);
+  }
+}
+
+@layer utilities {
+  .pt-safe { padding-top: calc(var(--safe-top) + 0.5rem); }
+  .pb-safe { padding-bottom: calc(var(--safe-bottom) + 0.5rem); }
+  .min-h-dvh { min-height: 100vh; min-height: 100svh; min-height: 100dvh; }
+}

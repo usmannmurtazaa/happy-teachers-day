@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://happy-teachers-day.netlify.app/sitemap.xml
